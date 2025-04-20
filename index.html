@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>João Pedro</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="imagens/Imagem do WhatsApp de 2025-04-20 à(s) 19.04.41_f73edb59.jpg" type="image/x-icon">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+
+    .hero {
+      background: url('imagens/Imagem\ do\ WhatsApp\ de\ 2025-04-20\ à\(s\)\ 19.04.41_f73edb59.jpg') center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content h1 {
+      font-size: 4rem;
+      margin: 0;
+    }
+
+    .hero-content p {
+      font-size: 1.5rem;
+    }
+
+    .main-nav {
+      margin-top: 20px;
+    }
+
+    .main-nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section.dark {
+      background-color: #1a1a1a;
+    }
+
+    .footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .carousel-container {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .carousel-item {
+      flex: 0 0 100%;
+      text-align: center;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      max-width: 200px; /* Tamanho das logos reduzido */
+      height: auto;
+      border-radius: 8px;
+      background: #222;
+      padding: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .carousel-item video {
+      width: 100%;
+      max-width: 500px; /* Tamanho dos vídeos mantido */
+      height: auto;
+      border-radius: 8px;
+      background: #222;
+      padding: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .carousel-item p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 165, 0, 0.8);
+      border: none;
+      color: #000;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .prev-btn {
+      left: 10px;
+    }
+
+    .next-btn {
+      right: 10px;
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      color: #ffa500;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>João Pedro</h1>
+      <p>Motion Designer & Criador de Conteúdo</p>
+      <nav class="main-nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="sobre" class="section dark">
+    <h2>Sobre</h2>
+    <p>Sou estudante de Design Gráfico com foco em Motion Design e Edição de Vídeo. Com 20 anos, desenvolvo projetos criativos e inovadores, sempre buscando aprimorar minhas habilidades e entregar resultados de alta qualidade para marcas e clientes.</p>
+  </section>
+
+  <section id="clientes" class="section">
+    <h2>Clientes</h2>
+    <div class="carousel">
+      <div class="carousel-container" id="carouselContainer">
+        <div class="carousel-item">
+          <img src="logos/507911b09b1cfcbd42c473f68f283f46.jpg" alt="Cliente 1" />
+          <p>Revoltz</p>
+        </div>
+        <div class="carousel-item">
+          <img src="logos/channels4_profile (1).jpg" alt="Cliente 2" />
+          <p>Ekkoyeah</p>
+        </div>
+      </div>
+      <div class="carousel-buttons">
+        <button class="carousel-button prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-button next-btn" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="trabalhos" class="section dark">
+    <h2>Trabalhos</h2>
+    <div class="carousel">
+      <div class="carousel-container" id="videoCarousel">
+        <div class="carousel-item">
+          <video controls><source src="videos/Comp 1.mp4" type="video/mp4"></video>
+          <p>Edição de clipe musical MMV</p>
+        </div>
+        <div class="carousel-item">
+          <video controls><source src="videos/Paranoia.mp4" type="video/mp4"></video>
+          <p>Criação de Logo e Animação para Trabalho da faculdade</p>
+        </div>
+        <div class="carousel-item">
+          <video controls><source src="videos/VAITOMARNOCU.mp4" type="video/mp4"></video>
+          <p>Edição de clipe musical AMV</p>
+        </div>
+        <div class="carousel-item">
+          <video controls><source src="videos/noah.mp4" type="video/mp4"></video>
+          <p>Edição de clipe musical MMV</p>
+        </div>
+      </div>
+      <div class="carousel-buttons">
+        <button class="carousel-button prev-btn" onclick="moveVideo(-1)">&#10094;</button>
+        <button class="carousel-button next-btn" onclick="moveVideo(1)">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato" class="footer">
+    <p>Contato: jpedromartinsofc@gmail.com</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/joão-pedro-b83573313/" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; 2025 João Pedro</p>
+  </footer>
+
+  <script>
+    let logoIndex = 0;
+    function moveSlide(direction) {
+      const container = document.getElementById('carouselContainer');
+      const items = container.querySelectorAll('.carousel-item');
+      const totalItems = items.length;
+      logoIndex += direction;
+      if (logoIndex < 0) logoIndex = totalItems - 1;
+      if (logoIndex >= totalItems) logoIndex = 0;
+      container.style.transform = `translateX(-${logoIndex * 100}%)`;
+    }
+
+    let videoIndex = 0;
+    function moveVideo(direction) {
+      const container = document.getElementById('videoCarousel');
+      const items = container.querySelectorAll('.carousel-item');
+      const totalItems = items.length;
+      videoIndex += direction;
+      if (videoIndex < 0) videoIndex = totalItems - 1;
+      if (videoIndex >= totalItems) videoIndex = 0;
+      container.style.transform = `translateX(-${videoIndex * 100}%)`;
+    }
+  </script>
+</body>
+</html>
